@@ -96,10 +96,10 @@
             padding-bottom: 0.3rem;
         }
 
-        /* Projects grid */
+        /* Projects */
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: 1fr;
             gap: 1.5rem;
         }
 
@@ -107,6 +107,31 @@
             background: #222;
             border-left: 5px solid #00b4d8;
             padding: 1rem;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
+        }
+
+        /* Skills */
+        ul.skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.skills-list li {
+            background-color: #222;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-left: 5px solid #00b4d8;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
+        }
+
+        /* Education & Extracurriculars */
+        .entry {
+            background-color: #222;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-left: 5px solid #00b4d8;
             border-radius: 6px;
             box-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
         }
@@ -128,23 +153,25 @@
 </head>
 <body>
 
-    <!-- Animated header strip -->
     <div class="lcars-bar"></div>
 
     <header>
-        <h1>Mason Marder </h1>
-        <p>Professional Title | Skills Summary</p>
+        <h1>Mason Marder</h1>
+        <p>Aspiring Physicist | Python & Java | Data Analysis</p>
     </header>
 
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#extracurriculars">Extracurriculars</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="about">
         <h2>About</h2>
-        <p>I am an aspiring physicist who has skills in coding Python and Java, and can also analyze data .</p>
+        <p>I am an aspiring physicist with skills in Python and Java programming, as well as data analysis. I enjoy solving complex problems and building efficient, reliable solutions.</p>
     </section>
 
     <section id="projects">
@@ -154,17 +181,43 @@
                 <h3>Project One</h3>
                 <p>Brief description of your project, highlighting key achievements, tools used, and results.</p>
             </div>
-            <div class="project-card">
-                <h3>Project Two</h3>
-                <p>Brief description of your project, highlighting key achievements, tools used, and results.</p>
-            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Python Programming</li>
+            <li>Java Programming</li>
+            <li>Data Analysis & Visualization</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="entry">
+            <strong>High School Diploma</strong> – School Name, Graduation Year
+        </div>
+        <div class="entry">
+            <strong>Relevant Coursework</strong> – Physics, Computer Science, Mathematics
+        </div>
+    </section>
+
+    <section id="extracurriculars">
+        <h2>Extracurriculars</h2>
+        <div class="entry">
+            Member of the Robotics Club – Led team projects and coding challenges
+        </div>
+        <div class="entry">
+            Volunteer at Local Science Center – Assisted in demonstrations and workshops
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:mardermason@gmail.com">mardermason@gmail.com</a></p>
-        <p>LinkedIn: <a href=https://www.linkedin.com/in/mason-marder-30762b37a/>LinkedIn Profile</a></p
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mason-marder-30762b37a/" target="_blank">LinkedIn Profile</a></p>
     </section>
 
     <footer>
@@ -173,6 +226,7 @@
 
 </body>
 </html>
+
 
 
 
